@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>物流追踪</title>
+		<link type="text/css" rel="stylesheet" href="./css/物流追踪.css">
+	</head>
+	<body>
+		<nav id="nav-top">
+			<table>
+				<tr>
+					<td title="首页"><a href="./首页.html">首页</a></td>
+					<td title="产品列表"><a href="./产品列表.html">产品列表</a></td>
+					<td title="溯源查询"><a href="./溯源查询.html">溯源查询</a></td>
+					<td title="关于我们"><a href="./关于我们.html">关于我们</a></td>
+					<td title="物流追踪"><a href="./物流追踪.html">物流追踪</a></td>
+					<td title="质量检测"><a href="./质量检测.html">质量检测</a></td>
+					<td title="用户中心"><a href="./用户中心.html">用户中心</a></td>
+					<td title="登陆"><a href="./登陆.html">登陆</a></td>
+				</tr>
+			</table>
+		</nav>
+		
+		<h1>物流追踪 - -</h1>
+		<span id="loading">加载中...</span>
+		<main>
+			<article>
+				<div id="one">
+					<div></div>
+					<h2>北京仓库</h2>
+					<span>2025-07-23 08:00</span><br>
+					<span>已发货</span>
+				</div>
+				<div id="two">
+					<div></div>
+					<h2>天津中转站</h2>
+					<span>2025-07-23 12:30</span><br>
+					<span>运输中</span>
+				</div>
+				<div id="three">
+					<div></div>
+					<h2>济南配送中心</h2>
+					<span>2025-07-23 16:45</span><br>
+					<span>已送达</span>
+				</div>
+			</article>
+			
+		</main>
+		
+		<a href="#" id="Back-to-top"></a>
+		
+		<script>
+			var loading=document.getElementById("loading")
+			var main=document.querySelector("main")
+			main.classList.add("none"); 
+			function isNone(){
+				setTimeout(function(){
+					loading.classList.add("none");
+					main.classList.remove("none");
+				},1000)
+			}
+			isNone()
+		</script>
+		
+	</body>
+</html>
