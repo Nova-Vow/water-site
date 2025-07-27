@@ -1,0 +1,270 @@
+*{
+	margin:0px;
+	
+}
+td[title="关于我们"]{
+	color: antiquewhite !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+#nav-top{
+	width:100%;
+	height:54px;
+	background-color:rgb(0, 170, 255);
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position:fixed;
+	top:0px;
+	z-index: 10;
+}
+table{
+	border:2px;
+}
+tr{
+	border:2px;
+}
+td{
+	width:100px;
+	/* background-color: wheat; */
+	text-align: center;
+	font-size:15px;
+	color: aliceblue;
+}
+
+td a{
+	text-decoration: none;
+	color: aliceblue;
+}
+td a:visited {
+    color: inherit;
+}
+td a:active {
+    color: inherit;
+}
+body{
+	position:relative;
+	top:70px;
+	background-color: rgb(245, 247, 250);
+}
+header{
+	width: 80%;
+	height: 300px;
+	background-color: rgb(24, 102, 196);
+	color: aliceblue;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 25px;
+	
+	
+}
+header h1,span{
+	padding: 80px 0 30px 0;
+}
+#Statement{
+	width: 80%;
+	height: 400px;
+	background-color: rgb(242, 242, 243);
+	margin: -10px auto;
+	padding: 0px 30px;
+	box-sizing: border-box;
+}
+#Statement h1,span{
+	padding: 30px 0 0px 0;
+	
+}
+#Statement h1{
+	color: rgb(26, 109, 204);
+	font-size: 35px;
+}
+#Statement span{
+	font-size: 18px;
+}
+#Statement hr{
+	background-color: rgb(26, 109, 204); 
+	height: 3px;
+	width: 10%;
+}
+#introduce{
+	margin: 60px auto;
+	text-align: center;
+	color: rgb(13, 71, 161);
+}
+#content-1{
+	width: 76%;
+	height: auto;
+	/* background-color: rgb(244, 246, 247); */
+	margin: -10px auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#content-1 div{
+	width: 350px;
+	height: 350px;
+	background-color: rgb(255, 255, 255);
+	margin: 5px;
+	padding: 50px 20px;
+	box-sizing: border-box;
+}
+#content-1 div:hover{
+	box-shadow: 0px 10px 8px rgb(204, 204, 204,80%);
+	transform:translateY(-3px);
+	transition: all 0.2s ease;
+	border-radius: 15px;
+}
+#content-1 div span{
+	line-height: 30px;
+}
+#content-2{
+	width: 76%;
+	height: auto;
+	/* background-color: rgb(244, 246, 247); */
+	margin: -10px auto;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#content-2 div{
+	width: 350px;
+	height: 350px;
+	background-color: rgb(255, 255, 255);
+	margin: 5px;
+	padding: 50px 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#content-2 div:hover{
+	box-shadow: 0px 10px 8px rgb(204, 204, 204,80%);
+	transform:translateY(-3px);
+	transition: all 0.2s ease;
+	border-radius: 15px;
+}
+#content-2 div span{
+	line-height: 30px;
+}
+@media(max-width: 1200px){
+	#content-1 div{
+		width: 100%;
+		height: 260px;
+	}
+	#content-2 div{
+		width: 100%;
+		height: 260px;
+	}
+}
+#teams{
+	width: 80%;
+	height: auto;
+	background-color: rgb(242, 242, 243);
+	margin: -10px auto;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+#team{
+	width: 90%;
+	height: 280px;
+	background-color: rgb(255, 255, 255);
+	margin: 5px;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 10px;
+	box-sizing: border-box;
+}
+
+#team div{
+	margin: 5px;
+	/* background-color: rgb(248, 255, 183); */
+	padding: 50px 20px;
+	box-sizing: border-box;
+}
+#team:hover{
+	box-shadow: 0px 10px 8px rgb(204, 204, 204,80%);
+	transform:translateY(-3px);
+	transition: all 0.2s ease;
+	border-radius: 15px;
+}
+#team-left{
+	width:55%;
+	height: 100%;
+}
+#team-left span{
+	line-height: 0px;
+	color: rgb(87, 87, 88);
+}
+#team-left span p{
+	color: rgb(0, 170, 255);
+	font-weight: bold;
+}
+#team-right{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+}
+#team-right img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top:0px;
+}
+.skill{
+	margin-top: 30px;
+	background-color: rgb(230, 247, 255);
+	color: rgb(24, 144, 255);
+	text-align: center;
+	width: 250px;
+}
+
+footer{
+	width: 100%;
+	height:450;
+	margin-top: 40px;
+	background-color: rgb(69, 156, 222);
+	padding: 50px 10%;
+	line-height: 25px;
+	display: flex;
+	box-sizing: border-box;
+}
+#foot-left{
+	width: 50%;
+}
+#foot-right{
+	width: 50%;
+	margin-left: 60px;
+}
+#foot-right input{
+	width:80%;
+}
+#foot-right textarea{
+	width:80%;
+}
+#foot-right button{
+	width:80px;
+	height:24px;
+}
+
+
+
+#Back-to-top{
+	width: 70px;
+	height: 70px;
+	/* background-color: antiquewhite; */
+	z-index: 10;
+	position: fixed;
+	right:50px;
+	bottom:40px;
+	background-image: url(../img/返回顶部.jpg);
+	background-position:center;
+	background-size: 130%;
+	border-radius: 50%;
+}
+#Back-to-top:hover{
+	transform: scale(102%);
+}
+#Back-to-top:active{
+	transform:scale(95%)
+}
