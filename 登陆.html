@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆</title>
+		<link type="text/css" href="css/登陆.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav id="nav-top">
+			<table>
+				<tr>
+					<td title="首页"><a href="./首页.html">首页</a></td>
+					<td title="产品列表"><a href="./产品列表.html">产品列表</a></td>
+					<td title="溯源查询"><a href="./溯源查询.html">溯源查询</a></td>
+					<td title="关于我们"><a href="./关于我们.html">关于我们</a></td>
+					<td title="物流追踪"><a href="./物流追踪.html">物流追踪</a></td>
+					<td title="质量检测"><a href="./质量检测.html">质量检测</a></td>
+					<td title="用户中心"><a href="./用户中心.html">用户中心</a></td>
+					<td title="登陆"><a href="./登陆.html">登陆</a></td>
+				</tr>
+			</table>
+		</nav>
+		
+		<main>
+			<h1>用户登陆</h1>
+			<form>
+				<label for="username">用户名</label><br>
+				<input type="text" id="username"><br>
+				<label for="password">密码</label><br>
+				<input type="password" id="password"><br>
+				<i id="code"></i><span id="upCode">看不清换一张</span><br>
+				<label>验证码：<input type="text" id="iCode"></label>
+				<button type="button" id="landing">登陆</button>
+			</form>
+		</main>
+		
+		
+		<script>
+			var str=""
+			var code = document.getElementById("code")
+			var upCode = document.getElementById("upCode")
+			var arr = ["1","2","3","5","7","8","9","a","b","c","e","f","z","x","j","k"]
+			fnUpCode()
+			function fnUpCode(){
+				for(let i=0;i<6;i++){
+					var arrNum = Math.floor(Math.random()*arr.length)
+					str += arr[arrNum]
+				}
+				code.textContent = str
+			}
+			upCode.onclick=()=>{
+				str = ""
+				fnUpCode()
+			}
+			
+			var iCode = document.getElementById("iCode")
+			var inputs = document.getElementsByTagName("input")
+			var landing=document.getElementById("landing")
+			landing.onclick=function(){
+				for(let i=0;i<inputs.length;i++){
+					if(inputs[i].value==""){
+						inputs[i].focus()
+						return false
+					}
+				}
+				if(iCode.value!=str){
+					alert("验证码不正确！")
+					iCode.value=""
+					return false
+				}else{
+					alert("登陆成功！")
+					location.href="./首页.html"
+				}
+			}
+		</script>
+		
+	</body>
+</html>

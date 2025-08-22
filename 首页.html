@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link rel="stylesheet" href="./css/首页.css" type="text/css"/>
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<nav id="nav-top">
+			<table>
+				<tr>
+					<td title="首页"><a href="./首页.html">首页</a></td>
+					<td title="产品列表"><a href="./产品列表.html">产品列表</a></td>
+					<td title="溯源查询"><a href="./溯源查询.html">溯源查询</a></td>
+					<td title="关于我们"><a href="./关于我们.html">关于我们</a></td>
+					<td title="物流追踪"><a href="./物流追踪.html">物流追踪</a></td>
+					<td title="质量检测"><a href="./质量检测.html">质量检测</a></td>
+					<td title="用户中心"><a href="./用户中心.html">用户中心</a></td>
+					<td title="登陆"><a href="./登陆.html">登陆</a></td>
+				</tr>
+			</table>
+		</nav>
+		
+		<main id="body">
+			<header id="name">
+				<h1>区块链矿泉水溯源系统</h1>
+				<span>安全 · 透明 · 可追溯</span>
+			</header>
+			
+			<div id="日期">
+				<ul>
+					<li id="日期1"></li>
+					<li id="时间"></li>
+				</ul>
+			</div>
+			
+			<!-- 轮播图 -->
+			<div id="轮播图">
+				<a class="img1"><img src="./img/banner1.jpg" title="矿泉水"></a>
+				<a><img src="./img/banner2.jpg" title="矿泉水"></a>
+				<a><img src="./img/banner3.jpg" title="矿泉水"></a>
+				
+				<span id="leftBtn" ><</span>
+				<span id="rightBtn" >></span>
+				
+				<div class="firstBtn"></div>
+				<div></div>
+				<div></div>
+			</div>
+			
+			
+			<h2 id="QRC">扫码溯源</h2>
+			<div id="QRC-1">
+				<div id="QRC-2" title="二维码"></div>
+				<div id="QRC-3">使用手机扫描产品二维码</div>
+			</div>
+			
+			<div id="action">
+				<div>
+					<i>🔗</i>
+					<h3>区块链技术</h3>
+					<p>利用区块链不可篡改特性，确保数据真实可靠</p>
+					</div>
+				<div>
+					<i>🔄</i>
+					<h3>全程追溯</h3>
+					<p>从水源到消费者，全流程信息透明可查</p>
+					</div>
+				<div>
+					<i>✅</i>
+					<h3>品质保障</h3>
+					<p>实时监控物流环境，确保产品品质</p>
+				</div><br><br><br>
+			</div>
+			<br><br><br><br><br><br>
+			
+			
+			
+			
+			
+			
+			<a href="#" id="Back-to-top"></a>
+			
+		</main>
+		
+		
+		
+		
+		<script>
+			window.onload=function(){
+				var time=new Date()
+				var year=time.getFullYear()
+				var month=time.getMonth()
+				var day=time.getDate()
+				var weekend=time.getDay()
+				document.getElementById("日期1").innerHTML=year+"年"+(month+1)+"月"+day+"日星期"+weekend
+			
+				var timer
+				//时间更新
+				function startNowTime(){
+					var nowTime=new Date()
+					document.getElementById("时间").innerHTML=nowTime.getHours() + ":" +nowTime.getMinutes() + ":" +nowTime.getSeconds()
+					timer = setTimeout(startNowTime, 1000);
+				}
+				startNowTime()
+			
+				//轮播图
+				var img=document.querySelectorAll("#轮播图 a")
+				var leftBtn=document.querySelector("#leftBtn")
+				var rightBtn=document.querySelector("#rightBtn")
+				var allBtn=document.querySelectorAll("#轮播图 div")
+				var index=0
+				var time
+				clickBtn()
+				leftBtn.onclick=function(){
+					clearInterval(time);
+					
+					index==0?index=img.length-1:index--
+					remove()
+					clickBtn()
+					startTime()
+				}
+				rightBtn.onclick=function(){
+					clearInterval(time);
+					
+					index==img.length-1?index=0:index++
+					remove()
+					clickBtn()
+					startTime()
+				}
+				
+				function clickBtn(){
+					for(let j=0;j<allBtn.length;j++){
+						allBtn[j].onclick=function(){
+							clearInterval(time);
+							index=j
+							remove()
+							startTime()
+						}
+					}	
+				}
+				
+				function remove(){
+					for(var i=0;i<img.length;i++){
+						img[i].classList.remove("img1")
+						allBtn[i].classList.remove("firstBtn")
+					}
+					img[index].classList.add("img1")
+					allBtn[index].classList.add("firstBtn")
+				}
+				function startTime(){
+					time=setInterval(function(){
+						
+						index==img.length-1?index=0:index++
+						remove()
+					},3000)
+				}
+				startTime()
+			}
+			
+			
+		</script>
+		
+		
+		
+		
+	</body>
+</html>

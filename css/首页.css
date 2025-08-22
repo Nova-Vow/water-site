@@ -1,0 +1,260 @@
+*{
+	margin:0px;
+	
+}
+td[title="首页"]{
+	color: antiquewhite !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+#nav-top{
+	width:100%;
+	height:54px;
+	background-color:rgb(0, 170, 255);
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	position:fixed;
+	top:0px;
+	z-index: 10;
+}
+td{
+	width:100px;
+	/* background-color: wheat; */
+	text-align: center;
+	font-size:15px;
+	color: aliceblue;
+}
+
+td a{
+	text-decoration: none;
+	color: aliceblue;
+}
+td a:visited {
+    color: inherit;
+}
+td a:active {
+    color: inherit;
+}
+body{
+	position:relative;
+	top:50px;
+}
+#name{
+	text-align: center;
+	font-size: 20px;
+}
+#name h1{
+	margin-top: 100px;
+	margin-bottom:20px;
+	
+}
+#name span{
+	color: rgb(0, 0, 0,60%);
+}
+#日期{
+	display: flex;
+	justify-content: center;
+	color: rgb(0, 0, 0,60%);
+	margin:20px;
+	font-size:18px
+}
+#日期 ul li::marker {
+  color: rgb(74, 113, 255);
+  font-size: 20px; 
+}
+#日期 ul{
+	display: flex;
+	justify-content:center;
+}
+#日期 li{
+	margin: 0px 30px;
+}
+#轮播图{
+	border: 2px solid blue;
+	display:flex;
+	position: relative;
+	top: 10px;
+	height: 453px;
+	width:680px;
+	margin:0 auto;
+}
+#轮播图 a{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%)
+}
+#轮播图 a img{
+	width:100%;
+	height:100%;
+	
+}
+.img1{
+	z-index:1;
+}
+#轮播图 div{
+	width:16px;
+	height:16px;
+	border-radius: 10px;
+	background-color: rgb(211, 211, 211);
+	z-index:3;
+	margin: 0 5px;
+	display: inline-block;
+	position: relative;
+	top: 94%;
+	left: 45%;
+	cursor: pointer;
+}
+#轮播图 div:hover{
+	background-color: rgb(185, 185, 185);
+}
+.firstBtn{
+	background-color: rgb(97, 179, 209) !important;
+}
+
+
+#轮播图 span{
+	z-index: 0;
+	width:38px;
+	height:60px;
+	border-radius: 10px;
+	background-color: rgb(175, 175, 175,80%);
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top:50%;
+	left:4%;
+	transform:translate(-50%,-50%);
+	font-size:40px;
+	text-align: center;
+	z-index:2;
+	cursor: pointer;
+}
+#轮播图 span:hover{
+	background-color: rgb(175, 175, 175,96%);
+}
+#轮播图 #rightBtn{
+	left: auto;
+	right:4%;
+	transform: translate(50%, -50%);
+}
+#QRC{
+	text-align: center;
+	margin: 80px 0 10px 0;
+}
+#QRC-1{
+	background-color: rgb(241, 241, 243);
+	width: 250px;
+	height: 280px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 10px;
+}
+#QRC-2{
+	background-color: rgb(175, 175, 175,96%);
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-60%);
+	border-radius: 8px;
+}
+#QRC-2:hover{
+	box-shadow: 0 0 8px rgb(208, 208, 208);
+}
+#QRC-3{
+	position: absolute;
+	top:80%;
+	left:50%;
+	transform: translate(-50%);
+	width: 90%;
+	/* background-color: blue; */
+	text-align: center;
+}
+
+
+#action{
+	width:80%;
+	height:250px;
+	text-align: center;
+	margin:0 auto;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	position:relative;
+	top:50px;
+	border-radius:20px;
+}
+
+#action div i{
+	font-size: 30px;
+	text-align: center;
+	background-color: rgb(199, 205, 255,30%);
+	border-radius: 80px;
+	padding:25px;
+	position:relative;
+	top:25px;
+}
+#action div{
+	background-color: rgb(235, 247, 255);
+	margin:10px;
+	width:80%;
+	height: 95%;
+	border-radius:15px;
+	padding-top:20px;
+	box-shadow:0 0 5px rgb(91, 96, 99,70%) ;
+	
+}
+
+#action div:hover{
+	box-shadow:0 5px 8px rgb(91, 96, 99,90%) ;
+	transform: scale(101%) translateY(-6px);
+	transition: all 0.5s ease; 
+}
+#action div h3,p{
+	padding-top: 20px;
+	margin:0px 20px;
+	
+}
+#action div h3{
+	padding-top: 70px;
+}
+@media(max-width:1200px){
+	#action{
+		display: block;
+	}
+	#action div{
+		display: block;
+		margin: 0px auto;
+		margin-bottom: 20px;
+		width: 100%;
+	}
+}
+#Back-to-top{
+	width: 70px;
+	height: 70px;
+	/* background-color: antiquewhite; */
+	z-index: 10;
+	position: fixed;
+	right:50px;
+	bottom:40px;
+	background-image: url(../img/返回顶部.jpg);
+	background-position:center;
+	background-size: 130%;
+	border-radius: 50%;
+}
+#Back-to-top:hover{
+	transform: scale(102%);
+}
+#Back-to-top:active{
+	transform:scale(95%)
+}
+
+
+
+
+

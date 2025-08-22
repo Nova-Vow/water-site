@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户中心</title>
+		<link type="text/css" href="css/用户中心.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav id="nav-top">
+			<table>
+				<tr>
+					<td title="首页"><a href="./首页.html">首页</a></td>
+					<td title="产品列表"><a href="./产品列表.html">产品列表</a></td>
+					<td title="溯源查询"><a href="./溯源查询.html">溯源查询</a></td>
+					<td title="关于我们"><a href="./关于我们.html">关于我们</a></td>
+					<td title="物流追踪"><a href="./物流追踪.html">物流追踪</a></td>
+					<td title="质量检测"><a href="./质量检测.html">质量检测</a></td>
+					<td title="用户中心"><a href="./用户中心.html">用户中心</a></td>
+					<td title="登陆"><a href="./登陆.html">登陆</a></td>
+				</tr>
+			</table>
+		</nav>
+		
+		<header>
+			<div id="head-1">
+				<img src="img/头像.jpg">
+				<div id="head-name">
+					<h1>赵经理</h1>
+					<div>
+						<span>👤 产品总监</span><br>
+						<span>✉ water@water.com</span><br>
+						<span>️📱 12345678</span><br>
+					</div>
+				</div>
+			</div>
+			<div id="head">
+				<div>
+					<h1>12</h1>
+					<span>产品数量</span>
+				</div>
+				<div>
+					<h1>5</h1>
+					<span>反馈数量</span>
+				</div>
+				<div>
+					<h1>28</h1>
+					<span>活跃天数</span>
+				</div>
+				</div>
+		</header>
+		
+		<main>
+			<div id="products">
+				<h2>我的产品</h2>
+				<hr>
+				<div id="product-1">
+					<div>
+						<img src="./img/矿泉水.jpg" id="fig">
+					</div>
+					<div id="text">
+						<h3>昆仑山天然矿泉水</h3>
+						<span>批次: B20250721-001</span><br>
+						<span id="text-1">状态：<span>在售</span></span>
+					</div>
+					<div>
+						<button id="p-btn">查看</button>
+					</div>
+				</div>
+				<div id="product-2">
+					<div>
+						<img src="./img/矿泉水.jpg" id="fig">
+					</div>
+					<div id="text">
+						<h3>长白山矿泉水</h3>
+						<span>批次: B20250721-002</span><br>
+						<span id="text-2">状态：<span>运输中</span></span>
+					</div>
+					<div>
+						<button id="p-btn">查看</button>
+					</div>
+				</div>
+				<div id="product-3">
+					<div>
+						<img src="./img/矿泉水.jpg" id="fig">
+					</div>
+					<div id="text">
+						<h3>阿尔卑斯矿泉水</h3>
+						<span>批次: B20250721-003</span><br>
+						<span id="text-3">状态：<span>已售罄</span></span>
+					</div>
+					<div>
+						<button id="p-btn">查看</button>
+					</div>
+				</div>
+				<br>
+			</div>
+			
+			<div id="feedback">
+				<h2>我的反馈</h2>
+				<hr>
+				<div id="f-1">
+					<div id="f-d-1-1">
+						<span>质量问题</span><span>0</span><span>已处理</span>
+					</div>
+					<div id="f-d-1-2">消费者反馈瓶身有异物，经检查为灌装线滤网破损导致，已更换</div>
+					<button id="f-btn">查看详细</button>
+				</div>
+				<div id="f-2">
+					<div id="f-d-2-1">
+						<span>包装问题</span><span>1</span><span>处理中</span>
+					</div>
+					<div id="f-d-2-2">部分产品包装箱在运输过程中破损，建议加强包装强度</div>
+					<button id="f-btn">查看详细</button>
+				</div>
+			</div>
+			
+			<div id="set-up">
+				<h2>账户设置</h2>
+				<hr>
+				<form>
+					<label>用户名</label><br>
+					<input type="text"><br>
+					<label>电子邮箱</label><br>
+					<input type="email"><br>
+					<label>手机号码</label><br>
+					<input type="number"><br>
+					<button type="button" onclick="save" id="save">保存设置</button>
+				</form>
+				
+			</div>
+		</main>
+		
+		<a href="#" id="Back-to-top"></a>
+		<br><br><br>
+		
+		
+		
+		<script>
+			var btn=document.getElementById("save")
+			btn.onclick=function save(){
+				alert("保存成功！")
+			}
+			
+			
+		</script>
+	</body>
+</html>

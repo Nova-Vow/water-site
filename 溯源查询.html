@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="./css/溯源查询.css">
+	</head>
+	<body>
+		<nav id="nav-top">
+			<table>
+				<tr>
+					<td title="首页"><a href="./首页.html">首页</a></td>
+					<td title="产品列表"><a href="./产品列表.html">产品列表</a></td>
+					<td title="溯源查询"><a href="./溯源查询.html">溯源查询</a></td>
+					<td title="关于我们"><a href="./关于我们.html">关于我们</a></td>
+					<td title="物流追踪"><a href="./物流追踪.html">物流追踪</a></td>
+					<td title="质量检测"><a href="./质量检测.html">质量检测</a></td>
+					<td title="用户中心"><a href="./用户中心.html">用户中心</a></td>
+					<td title="登陆"><a href="./登陆.html">登陆</a></td>
+				</tr>
+			</table>
+		</nav>
+		
+		<div id="search">
+			<h2>产品溯源查询<span>（可以搜索）</span></h2><br>
+			<div id="s-content">
+				<div>
+					<input id="s-input" type="text"  placeholder="  搜索矿泉水品牌、水源地或批次号...">
+					<div id="show"></div>
+				</div>
+				<button id="s-btn" onclick="isNone()">搜索</button>
+			</div>
+			
+		</div>
+		
+		<header class="header">
+			<a href="首页.html">首页</a> / <a href="产品列表.html">产品列表</a> / <span>昆仑山天然矿泉水</span>
+			<br>
+			<div id="header">
+				<div>
+					<h1>昆仑山天然矿泉水</h1>
+					<span>昆仑山水源地</span>
+					<span>在售</span>
+					
+				</div>
+				<span>批次号: B20250710-001</span>
+			</div>
+			<hr>
+		</header>
+		
+		<main id="product">
+			<div id="p-left">
+				<div id="p-left-top" class="p-left-top">
+					<button id="p-btnL"><</button>
+					<button id="p-btnR">></button>
+				</div>
+				<div id="p-left-buttom">
+					<img src="./img/water1.jpg" alt="" />
+					<img src="./img/water2.jpg" alt="">
+					<img src="./img/water3.jpg" alt="">
+				</div>
+			</div>
+			<div id="p-right">
+				<div  id="p-right-1">
+					<h3>产品规格</h3>
+					<hr>
+					<table id="p-tbe1">
+						<tr>
+							<td>水源地</td>
+							<td>昆仑山水源地</td>
+							<td>生产日期</td>
+							<td>2025年07月22日 08:00</td>
+						</tr>
+						<tr>
+							<td>保质期</td>
+							<td>24个月</td>
+							<td>净含量</td>
+							<td>500ml</td>
+						</tr>
+						<tr>
+							<td>矿物质含量</td>
+							<td>85 mg/L</td>
+							<td>PH值</td>
+							<td>7.8</td>
+							
+						</tr>
+					</table>
+				</div>
+				<div id="p-right-2">
+					<h3>区块链溯源</h3>
+					<hr>
+					<table id="p-tbe2">
+						<tr>
+							<td>交易哈希</td>
+							<td>0x123456789987654321</td>
+							<td><button id="copy">复制</button></td>
+						</tr>
+						<tr>
+							<td>区块高度</td>
+							<td>123456</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>上链时间</td>
+							<td>2025年07月22日 17:21</td>
+							<td></td>
+						</tr>
+					</table>
+					<button id="Details">查看区块详细信息</button>
+				</div>
+				<div id="p-right-3">
+					<h3>产品生命周期</h3>
+					<hr>
+					<div id="sel">
+						<button id="btn-l"><</button>
+						<span>水源采集</span>
+						<button id="btn-r">></button>
+					</div>
+					<textarea id="textarea">在海拔4000米的昆仑山水源地完成天然矿泉水采集，水质纯净无污染。</textarea>
+					<div id="btns">
+						<button></button>
+						<button></button>
+						<button></button>
+						<button></button>
+						<button></button>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<footer>
+			<h2>相关产品</h2>
+			<hr>
+			<div id="products">
+				<div id="p-1">
+					<div id="p-content">
+						<h2>阿尔卑斯纯净水</h2>
+						<h4>水源地: 瑞士阿尔卑斯山脉</h4>
+						<span>源自海拔2000米的天然冰川融水，经过多年岩层过滤，富含多种矿物质。</span><br><br>
+						<button>区块链溯源ID: QW345XJ89</button><br><br>
+						<div>
+							<span>¥12.8</span>
+							<button>查看信息</button>
+						</div>
+					</div>
+				</div>
+				<div id="p-2">
+					<div id="p-content">
+						<h2>长白山水源</h2>
+						<h4>水源地: 中国长白山</h4>
+						<span>来自长白山原始森林的深层地下水，天然弱碱性，pH值7.8-8.3，口感清甜。</span><br><br>
+						<button>区块链溯源ID: CB876FD23</button><br><br>
+						<div>
+							<span>¥8.5</span>
+							<button>查看信息</button>
+						</div>
+					</div>
+				</div>
+				<div id="p-3">
+					<div id="p-content">
+						<h2>斐济天然水</h2>
+						<h4>水源地: 斐济维提岛</h4>
+						<span>来自南太平洋斐济群岛的天然雨水，经过火山岩层过滤，不含人工添加物。</span><br><br>
+						<button>区块链溯源ID: FJ453KL78</button><br><br>
+						<div>
+							<span>¥18.0</span>
+							<button>查看信息</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<br><br>
+		
+		<a href="#" id="Back-to-top"></a>
+		<script>
+			var main=document.querySelector("main")
+			var footer=document.querySelector("footer")
+			var header=document.querySelector("header")
+			none()
+			function none(){
+				main.classList.add("none")
+				footer.classList.add("none")
+				header.classList.add("none")
+			}
+			function isNone(){
+				if(sInput.value==""){
+					sInput.focus()
+					addSearch()
+					show.innerHTML=sStr
+					showText()
+				}else{
+					document.getElementById("search").classList.add("none")
+					main.classList.remove("none")
+					footer.classList.remove("none")
+					header.classList.remove("none")
+				}
+				
+			}
+			// --------------------------
+			
+			var sInput=document.getElementById("s-input")
+			var sBtn=document.getElementById("s-btn")
+			var show=document.getElementById("show")
+			
+			var sStr
+			var sArr=["昆仑山天然矿泉水","阿尔卑斯纯净水","长白山水源","斐济天然水","西藏5100","依云天然矿泉水","农夫山泉"]
+			sInput.onkeyup=()=>{
+				addSearch()
+				if(!sStr){
+					show.innerHTML="<p>暂无结果</p>"
+				}else{
+					show.innerHTML=sStr
+				}
+				showText()
+			}
+			
+			function addSearch(){
+				show.style.display="block"
+				sStr=""
+				sArr.forEach((item)=>{
+					let res = item.indexOf(sInput.value)
+					if(res!=-1){
+						sStr+="<p>"+item+"</p>"
+					}
+				})
+				
+			}
+			sInput.onclick=()=>{
+				addSearch()
+				show.innerHTML=sStr
+				showText()
+			}
+			function showText(){
+				let showText=document.querySelectorAll("#show p")
+				showText.forEach((item)=>{
+					item.onclick=()=>{
+						sInput.value=item.textContent
+					}
+				})
+			}
+			sInput.onblur=()=>{
+				setTimeout(() => {
+				    show.style.display = 'none';
+				  }, 100);
+			}
+			
+			
+			
+			
+			
+			
+			// --------------------------
+			var image=document.getElementById("p-left-top")
+			var pBtnL=document.getElementById("p-btnL")
+			var pBtnR=document.getElementById("p-btnR")
+			var pImgs=document.querySelectorAll("#p-left-buttom img")
+			var l=0
+			image.classList.add("image1");
+			pImgs[l].classList.add("pImgStyle");
+			pBtnL.onclick=function(){
+				l===0?l=2:l--;
+				unImage();
+				unpImgStyle();
+				addImage();
+			}
+			pBtnR.onclick=function(){
+				l===2?l=0:l++;
+				unImage();
+				unpImgStyle();
+				addImage();
+			}
+			function unImage(){
+				image.classList.remove("image1");
+				image.classList.remove("image2");
+				image.classList.remove("image3");
+			}
+			function unpImgStyle(){
+				for(let i=0;i<pImgs.length;i++){
+					pImgs[i].classList.remove("pImgStyle");
+				}
+			}
+			for(let i=0;i<pImgs.length;i++){
+				pImgs[i].onclick=function(){
+					l=i;
+					unImage();
+					unpImgStyle();
+					addImage();
+				}
+			}
+			function addImage(){
+				switch(l){
+					case 0:
+					image.classList.add("image1");
+					pImgs[l].classList.add("pImgStyle");
+					break;
+					case 1:
+					image.classList.add("image2");
+					pImgs[l].classList.add("pImgStyle");
+					break;
+					case 2:
+					image.classList.add("image3");
+					pImgs[l].classList.add("pImgStyle");
+					break;
+				}
+			}
+			
+			// -------------------
+			var btnL=document.getElementById("btn-l")
+			var btnR=document.getElementById("btn-r")
+			var title=document.querySelector("#sel span")
+			var text=document.getElementById("textarea")
+			var btns=document.querySelectorAll("#btns button")
+			var index=0
+			
+			btns[index].style.backgroundColor="rgb(24, 144, 255)";
+			
+			function colorNone(){
+				for(let i=0;i<btns.length;i++){
+					btns[i].style.backgroundColor="";
+				}
+			}
+			for(let i=0;i<btns.length;i++){
+				btns[i].onclick=function(){
+					colorNone();
+					btns[i].style.backgroundColor="rgb(24, 144, 255)";
+					index=i;
+					updateText()
+				}
+			}
+			
+			
+			btnL.onclick=function(){
+				index===0?index=4:index--;
+				colorNone()
+				btns[index].style.backgroundColor="rgb(24, 144, 255)";
+				updateText()
+			}
+			
+			btnR.onclick=function(){
+				index===4?index=0:index++;
+				colorNone()
+				btns[index].style.backgroundColor="rgb(24, 144, 255)";
+				updateText()
+			}
+			
+			function updateText() {
+			        switch(index){
+			            case 0:
+			                text.value = "在海拔4000米的昆仑山水源地完成天然矿泉水采集，水质纯净无污染。";
+			                title.textContent  = "水源采集"
+							break;
+			            case 1:
+							text.value = "采用全自动无菌灌装生产线，严格控制生产环境，确保产品卫生安全。";
+			                title.textContent  = "生产加工"
+			                break;
+			            case 2:
+			                text.value = "通过12项严格质量检测，PH值7.8，矿物质含量85.0mg/L，全部指标符合国家标准。";
+			                title.textContent  = "质量检测"
+							break;
+			            case 3:
+			                text.value  = "全程冷链运输，实时监控温度保持在4-6℃，确保产品品质。";
+			                title.textContent  = "物流运输"
+							break;
+			            case 4:
+			                text.value = "产品正式上架销售，消费者可通过扫描二维码查询完整溯源信息。";
+			                title.textContent  = "上架销售"
+							break;
+			        }
+			}
+			
+			
+			
+			
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>
