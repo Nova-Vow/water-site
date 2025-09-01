@@ -53,7 +53,7 @@ body{
 	width:100%;
 	height: 320px;
 	overflow: hidden;
-	background-image: url(../img/大自然.jpg);
+	background-image: url(../img/大自然.webp);
 	background-position: 0px;
 	background-size: 100%;
 }
@@ -190,30 +190,30 @@ body{
 	background-color: rgb(0, 153, 230);
 }
 #p-1{
-	background-image: url(../img/p1.jpg);
+	background-image: url(../img/p1.webp);
 	background-size: 100%;
 }
 #p-2{
-	background-image: url(../img/p2.jpg);
+	background-image: url(../img/p2.webp);
 	background-size: 100%;
 	background-position: 0px -70px;
 }
 #p-3{
-	background-image: url(../img/p3.jpg);
+	background-image: url(../img/p3.webp);
 	background-size: 100%;
 	background-position: 0px -150px;
 }
 #p-4{
-	background-image: url(../img/p4.jpg);
+	background-image: url(../img/p4.webp);
 	background-size: 100%;
 	background-position: 0px -160px;
 }
 #p-5{
-	background-image: url(../img/p5.jpg);
+	background-image: url(../img/p5.webp);
 	background-size: 100%;
 }
 #p-6{
-	background-image: url(../img/p6.jpg);
+	background-image: url(../img/p6.webp);
 	background-size: 172%;
 	background-position: -90px 0px;
 }
@@ -268,7 +268,7 @@ footer h1{
 	position: fixed;
 	right:50px;
 	bottom:40px;
-	background-image: url(../img/返回顶部.jpg);
+	background-image: url(../img/返回顶部.webp);
 	background-position:center;
 	background-size: 130%;
 	border-radius: 50%;
